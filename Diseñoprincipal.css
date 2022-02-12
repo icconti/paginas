@@ -1,0 +1,72 @@
+. página {
+    posición : relativa;
+    pantalla : flexible;
+    dirección de flexión : columna;
+}
+
+principal {
+    flexión :  1 ;
+}
+
+. barra lateral {
+    imagen de fondo :  degradado lineal ( 180 grados ,  rgb ( 5 ,  39 ,  103 ) 0 % ,  # 3a0647  70 % );
+}
+
+. fila superior {
+    color de fondo :  # f7f7f7 ;
+    borde inferior :  1 px sólido # d6d5d5 ;
+    justificar-contenido : extremo flexible;
+    altura :  3,5 mm ;
+    pantalla : flexible;
+    alinear elementos : centro;
+}
+
+    . fila superior :: profundo  a , . fila superior . enlace btn {
+        espacio en blanco : ahora rap;
+        margen izquierdo :  1,5 rem ;
+    }
+
+    . fila superior  a : primer hijo {
+        desbordamiento : oculto;
+        desbordamiento de texto : puntos suspensivos;
+    }
+
+@media ( ancho máximo :  640,98 px ) {
+    . fila superior : no (. auth ) {
+        pantalla : ninguno;
+    }
+
+    . fila superior . autorización {
+        justificar-contenido : espacio-entre;
+    }
+
+    . fila superior  a , . fila superior . enlace btn {
+        margen izquierdo :  0 ;
+    }
+}
+
+@media ( ancho mínimo :  641 px ) {
+    . página {
+        dirección de flexión : fila;
+    }
+
+    . barra lateral {
+        ancho :  250 píxeles ;
+        altura :  100 vh ;
+        posición : pegajoso;
+        superior :  0 ;
+    }
+
+    . fila superior {
+        posición : pegajoso;
+        superior :  0 ;
+        índice z :  1 ;
+    }
+
+    . fila superior ,  artículo {
+        padding-left :  2 rem  !important ;
+        padding-right :  1.5 rem  !important ;
+    }
+}
+© 2022 GitHub, Inc.
+Condicion
