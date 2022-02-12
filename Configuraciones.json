@@ -1,0 +1,29 @@
+{
+  "Configuración de iis" : {
+    "autenticación de Windows" : falso ,
+    "autenticación anónima" : verdadero ,
+    "iisExpress" : {
+      "url de la aplicación" : " http://localhost:22487 " ,
+      "Puerto SSL" : 44357
+    }
+  },
+  "perfiles" : {
+    "a) Ejemplo 1" : {
+      "commandName" : " Proyecto " ,
+      "dotnetRunMessages" : verdadero ,
+      "launchBrowser" : verdadero ,
+      "url de la aplicación" : " https://localhost:7213;http://localhost:5181 " ,
+      "Variables de entorno" : {
+        "ASPNETCORE_ENVIRONMENT" : " Desarrollo "
+      }
+    },
+    "IIS expreso" : {
+      "NombreComando" : " IISExpress " ,
+      "launchBrowser" : verdadero ,
+      "Variables de entorno" : {
+        "ASPNETCORE_ENVIRONMENT" : " Desarrollo "
+      }
+    }
+  }
+}
+© 2022 GitHub, Inc.
