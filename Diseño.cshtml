@@ -1,0 +1,32 @@
+<!DOCTYPEhtml>
+< html  idioma = " es " >
+
+< cabeza >
+    < juego de caracteres meta  = " utf-8 " />
+    < meta  name = " viewport "  content = " ancho=ancho-del-dispositivo, escala-inicial=1.0 " />
+    < base  href = " ~/ " />
+    @* <enlace rel="hoja de estilo" href="css/bootstrap/bootstrap.min.css" /> *@
+    < enlace  href = " css/site.css "  rel = " hoja de estilo " />
+    < enlace  rel = " hoja de estilo "  href = " css/output.css " />
+    < link  href = " a) Ejemplo 1.styles.css "  rel = " stylesheet " />
+    < tipo de componente  = " typeof(HeadOutlet) " render-mode = " ServerPrerendered " /> 
+</ cabeza >
+
+< cuerpo >
+    @RenderBody()
+
+    < div  id = " blazor-error-ui " >
+        < entorno  incluido = " Puesta en escena, Producción " >
+            Se ha producido un error. Es posible que esta aplicación ya no responda hasta que se vuelva a cargar.
+        </ entorno >
+        < entorno  include = " Desarrollo " >
+            Se ha producido una excepción no controlada. Consulte las herramientas de desarrollo del navegador para obtener más información.
+        </ entorno >
+        < a  href = " "  class = " recargar " >Recargar</ a >
+        < una  clase = " descartar " >🗙</ a >
+    </ div >
+
+    < secuencia de comandos  src = " _framework/blazor.server.js " ></ secuencia de comandos >
+</ cuerpo >
+
+</ html >
