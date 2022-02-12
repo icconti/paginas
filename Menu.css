@@ -1,0 +1,62 @@
+. alternador de barra de navegación {
+    color de fondo :  rgba ( 255 ,  255 ,  255 ,  0.1 );
+}
+
+. fila superior {
+    altura :  3,5 mm ;
+    color de fondo :  rgba ( 0 , 0 , 0 , 0,4 );
+}
+
+. marca de la barra de navegación {
+    tamaño de fuente :  1,1 rem ;
+}
+
+. oye {
+    ancho :  2 rem ;
+    tamaño de fuente :  1,1 rem ;
+    alineación vertical : texto superior;
+    arriba :  -2 px ;
+}
+
+. elemento de navegación {
+    tamaño de fuente :  0,9 rem ;
+    acolchado inferior :  0,5 rem ;
+}
+
+    . elemento de navegación : primero de tipo {
+        acolchado superior :  1 rem ;
+    }
+
+    . elemento de navegación : último tipo {
+        acolchado inferior :  1 rem ;
+    }
+
+    . elemento de navegación :: profundo  a {
+        color :  # d7d7d7 ;
+        borde-radio :  4 px ;
+        altura :  3 rem ;
+        pantalla : flexible;
+        alinear elementos : centro;
+        altura de línea :  3 rem ;
+    }
+
+. elemento de navegación :: profundo  a . activo {
+    color de fondo :  rgba ( 255 , 255 , 255 , 0,25 );
+    color : blanco;
+}
+
+. elemento de navegación :: profundo  a : hover {
+    color de fondo :  rgba ( 255 , 255 , 255 , 0.1 );
+    color : blanco;
+}
+
+@media ( ancho mínimo :  641 px ) {
+    . alternador de barra de navegación {
+        pantalla : ninguno;
+    }
+
+    . colapsar {
+        /* Nunca contraer la barra lateral para pantallas anchas */
+        pantalla : bloque;
+    }
+}
