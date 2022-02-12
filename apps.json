@@ -1,0 +1,9 @@
+{
+  "Registro" : {
+    "Nivel de registro" : {
+      "Predeterminado" : " Información " ,
+      "Microsoft.AspNetCore" : " Advertencia "
+    }
+  },
+  "AllowedHosts" : " * "
+}
